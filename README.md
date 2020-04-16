@@ -1,4 +1,4 @@
-# Botlogistics
+# botlogistics
 Repository for fleet logistics.
 
 ## Directory Structure

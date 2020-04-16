@@ -10,10 +10,10 @@ Repository for fleet logistics.
 		├── README.md
 		├── run.sh                  # scripts to run logistics services
 		└── tracking                # contains all services related to tracking
-				├── fleet.py            # zmq and server that maintains and updates fleet state
-				├── listener.py         # zmq server and client to listen to updater and update fleet, respectively
-				├── run_listener.py     # script to test listener
-				├── run_updater.py      # script to test updater
-				└── updater.py          # updated listens to cars for updates and posts to listener server
+			├── fleet.py            # zmq and server that maintains and updates fleet state
+			├── listener.py         # zmq server and client to listen to updater and update fleet, respectively
+			├── run_listener.py     # script to test listener
+			├── run_updater.py      # script to test updater
+			└── updater.py          # updated listens to cars for updates and posts to listener server
 
 

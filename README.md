@@ -1,5 +1,5 @@
 # botlogistics
-Repository for fleet logistics.
+Repository for various logistics services to run on guadr.gonzaga.edu webserver
 
 ## Directory Structure
 	overview of files in this repo

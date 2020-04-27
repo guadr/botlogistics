@@ -1,4 +1,3 @@
-# TODO: make a persistent db for storing fleet details
 import zmq
 import sqlite3
 

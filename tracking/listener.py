@@ -1,5 +1,3 @@
-# TODO: get REP socket listening to port on guadr.gonzaga.edu
-
 import time
 import zmq
 

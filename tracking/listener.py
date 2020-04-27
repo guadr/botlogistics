@@ -12,10 +12,10 @@ class Listener(object):
         
         self.context = None
         self.socket = None
-        self.bind_REP()
+        self._bind_REP()
 
         if test_listen:
-            self.updater_listen_test()
+            self._updater_listen_test()
         
         listen_loop()
 
@@ -52,6 +52,6 @@ class Listener(object):
         resp = socket.recv()
         if resp == "success":
             print("successful fleet update")
-        else
+        else:
             print("unsuccessful fleet update, see logs for details")
 

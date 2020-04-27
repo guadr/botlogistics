@@ -1,5 +1,5 @@
 # TODO: make a persistent db for storing fleet details
-import pyzmq
+import zmq
 import sqlite3
 
 
@@ -18,7 +18,7 @@ class Fleet(object):
         """
         if load_from_db:
             print("initalizing self.cars from db")
-            self.cars = self.init_fleet_from_db()
+            self.cars = self._init_fleet_from_db()
         else:
             self.cars = cars
 
@@ -32,7 +32,7 @@ class Fleet(object):
 
         context = zmq.Context()
         socket = context.socket(zmq.REP)
-        socket.bind(FLEET_TCP_IP + FLEET_TCP_PORT) 
+        socket.bind(Fleet.FLEET_TCP_IP + Fleet.FLEET_TCP_PORT) 
 
         while True:
             #  Wait for next request from client
@@ -63,7 +63,7 @@ if __name__ == "__main__":
         [("lat", 47.71),
          ("long", 33.54),
          ("destination", "hk_east"),
-         ("order", "starbucks", "sandwich", "coffee")
+         ("order", "starbucks", "sandwich", "coffee"),
          ("status", "enroute")
         ]
     )
@@ -71,7 +71,7 @@ if __name__ == "__main__":
         [("lat", 47.74),
          ("long", 33.53),
          ("destination", "hemm_sw"),
-         ("order", None)
+         ("order", None),
          ("status", "idle")
         ]
     )

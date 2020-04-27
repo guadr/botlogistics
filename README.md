@@ -1,6 +1,12 @@
 # botlogistics
 Repository for various logistics services to run on guadr.gonzaga.edu webserver
 
+## Requirements
+### ØMQ python bindings
+```bash
+pip install pyzmq
+```
+
 ## Directory Structure
 	overview of files in this repo
 		.

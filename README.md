@@ -1,5 +1,6 @@
 # botlogistics
-Repository for various logistics services to run on guadr.gonzaga.edu webserver
+Repository for various logistics services to run on guadr.gonzaga.edu webserver.
+The scripts are all ran using a single systemd service. If you're interested in linux, systemd is worth learning about. They provide extensive documentation, tutorials, and manuals [here](https://www.freedesktop.org/wiki/Software/systemd/). 
 
 ## Requirements
 ### ØMQ python bindings
